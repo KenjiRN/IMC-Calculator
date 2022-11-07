@@ -7,7 +7,8 @@
     font-size: 62.5%;
 }
 
-/*RESET TUDO QUE ESTA ACIMA, É IDEAL COMEÇCAR COM ESSAS CARACTERISTICAS*/
+/*RESET TUDO QUE ESTA ACIMA, É IDEAL
+ COMEÇCAR COM ESSAS CARACTERISTICAS*/
 
 body{
     background-color: #040924;
@@ -38,11 +39,17 @@ p{
     Line-height: 1.8rem;
     color: #00453A;
 }
-button{
+form button{
     font-size: 1.6rem;
     background-color: #02799D;
     border: none;
     color: #ffffff;
+    transition:background .3s ;
+    cursor: pointer;
+}
+form button:hover{
+    background-color:#03475c;
+    
 }
 .caixa2{
     border-radius: 0.4rem;
@@ -55,6 +62,7 @@ input{
     border: none;
     color:#212529;
     box-shadow: rgba(73, 80, 87, 0.3 );
+    padding: 1.6rem;
     
 }
 #peso{
@@ -62,4 +70,64 @@ input{
 }
 #altura{
     margin-bottom: 3.2rem;
+}
+
+.modal-wrapper.open{
+    opacity: 1;
+    visibility: visible;
+}
+.modal-wrapper{
+    position:absolute;
+    background-color:rgba(0, 0, 0, 0.7);
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    /*ou substitui todos os 0 por inset:0; */
+    display:grid;
+    place-content: center;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.card{
+    padding: 4.8rem 6.4rem 6.4rem;
+    background: white;
+    max-width: 42.8rem;
+    margin-inline: auto;
+
+    box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
+    border-radius: .6rem;
+}
+.modal{
+    position: relative;
+}
+.modal button{
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    cursor: pointer;
+}
+.alert.open{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+.alert{
+    position: absolute;
+    background:rgb(126, 17, 17);
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    padding: .8rem 0;
+    font-weight: bold;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: transform .5s;
 }
