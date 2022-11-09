@@ -12,7 +12,7 @@
     <script src="/script.js" defer></script>
 </head>
 <body>
-    <div class="alert open">
+    <div class="alert">
         Digite somente números
     </div>
 
@@ -21,19 +21,17 @@
 
         <form>
             <h2>Cálculo de IMC</h2>
-            <p>Peso (kg)</p>
+            <label for="peso">Peso (kg)</label>
             <input class="caixa2" id="peso" type="number" placeholder="Peso">
-            <p>Altura (m)</p>
+            <label for="altura">Altura (Cm)</label>
             <input class="caixa2" id="altura" type="number"placeholder="Altura">
-            <button class="caixa2">Calcular IMC</button>
+            <button type="submit" class="caixa2">Calcular IMC</button>
         </form>
     </main>
 
-    <div class="modal-wrapper ">
+    <div class="modal-wrapper">
         <div class="modal card">
-            <h2>
-                Seu IMC é de 28
-            </h2>
+            <span>Seu IMC é de 28</span>
             <button class="close">
                 X
             </button>

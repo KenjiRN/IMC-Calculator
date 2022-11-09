@@ -33,7 +33,14 @@ h2{
     font-weight: 700;
     color: #0C3440;
 }
-p{
+span{
+    font-size: 3.2rem;
+    margin-bottom: 3.2rem;
+    line-height: 4rem;
+    font-weight: 700;
+    color: #0C3440; 
+}
+label{
     font-size: 1.4rem;
     margin-bottom: 0.8rem;
     Line-height: 1.8rem;
