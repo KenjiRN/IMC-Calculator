@@ -37,3 +37,13 @@ modalBtnClose.onclick = () => {
 function IMC(peso, altura){
     return(peso/((altura/100) ** 2)).toFixed(2)
 }
+
+
+
+//essa parte irá fechar o modal com a tecla Esc
+window.addEventListener('keydown', handleKeydown)
+function handleKeydown(event){
+    if(event.key ==='Escape'){
+        modalWrapper.classList.remove('open')
+    }
+}
